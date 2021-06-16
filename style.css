@@ -16,21 +16,20 @@ body{
 
 
 .container{
-   padding: 20px 50px;
    background: var(--Violet);
    font-family: 'Poppins', sans-serif;
+   padding: 0 50px;
   
 
 }
-header{
 
-    margin-top: 10px;
-}
 header .logo{
     width: 120px;
+    
 }
 header .logo img{
     width: 100%;
+    margin-top: 20px;
 }
 /* ......................main..................................... */
 main{
@@ -42,7 +41,7 @@ main{
     flex: 1;
 }
 .left{
-    height: 350px;
+    height: 450px;
 }
 .left img{
     width: 100%;
@@ -88,6 +87,7 @@ main .left img{
 footer ul{
     display: flex;
     justify-content: flex-end;
+    transform: translateY(-50px);
     
     
 }
@@ -125,6 +125,9 @@ footer ul li:hover{
     
     footer ul{
         justify-content: center;
+    }
+    .btn{
+        margin-bottom: 90px;
     }
 
 }
