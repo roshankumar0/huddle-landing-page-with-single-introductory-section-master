@@ -5,18 +5,22 @@ body{
     font-family: 'Poppins', sans-serif;
     font-family: "Open Sans";
     margin: 0; padding: 0; box-sizing: border-box;
- 
-
+    
 }
+
 :root{
     --Violet: hsl(257, 40%, 49%);
     --Soft-Magenta: hsl(300, 69%, 71%);
 }
 /* .................container here from start...................... */
+
+
 .container{
    padding: 20px 50px;
    background: var(--Violet);
    font-family: 'Poppins', sans-serif;
+   margin: 60px 30px;
+   position: relative;
   
 
 }
@@ -70,7 +74,13 @@ main{
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    transition: all 0.3s ease-in;
     
+}
+.right .btn:hover{
+    background: var(--Soft-Magenta);
+    outline: none;
+    border: none;
 }
 main .left img{
     width: 100%;
@@ -99,6 +109,7 @@ footer ul li:hover{
 }
 
 
+
 .attribution { font-size: 14px; text-align: center; }
 .attribution a { color: white; }
 @media (max-width:768px) {
@@ -111,5 +122,8 @@ footer ul li:hover{
         padding-left: 0px;
         padding-top: 0px;
         color: white;
+    }
+    footer ul{
+        justify-content: center;
     }
 }
