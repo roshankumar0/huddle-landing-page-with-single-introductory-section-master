@@ -1,0 +1,115 @@
+html{
+    font-size: 100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: "Open Sans";
+    margin: 0; padding: 0; box-sizing: border-box;
+ 
+
+}
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+/* .................container here from start...................... */
+.container{
+   padding: 20px 50px;
+   background: var(--Violet);
+   font-family: 'Poppins', sans-serif;
+  
+
+}
+header{
+
+    margin-top: 10px;
+}
+header .logo{
+    width: 120px;
+}
+header .logo img{
+    width: 100%;
+}
+/* ......................main..................................... */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+ }
+.content{
+    flex: 1;
+}
+.left{
+    height: 350px;
+}
+.left img{
+    width: 100%;
+    height: 100%;
+}
+.right{
+   
+    padding-left: 50px;
+    padding-top: 0px;
+    color: white;
+}
+.right h2{
+    font-size: 35px;
+    width: 80%;
+    font-weight: 400;
+}
+.right p{
+    font-size: 16px;
+    padding-right: 35px;
+    
+}
+.right .btn{
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: var(--Violet);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    
+}
+main .left img{
+    width: 100%;
+}
+/* ............................footer........................ */
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+footer ul li{
+    margin-right: 15px;
+    list-style: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    transition: all 0.3s ease-in;
+}
+footer ul li{
+    color: white;
+}
+footer ul li:hover{
+    color: var(--Soft-Magenta);
+    border: 1px solid var(--Soft-Magenta);
+}
+
+
+.attribution { font-size: 14px; text-align: center; }
+.attribution a { color: white; }
+@media (max-width:768px) {
+    
+    main{
+        flex-direction: column;
+    }
+    .right{
+   
+        padding-left: 0px;
+        padding-top: 0px;
+        color: white;
+    }
+}
