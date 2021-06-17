@@ -2,9 +2,9 @@ html{
     font-size: 100%;
 }
 body{
-    font-family: 'Poppins', sans-serif;
     font-family: "Open Sans";
     margin: 0; padding: 0; box-sizing: border-box;
+   
     
 }
 
@@ -14,14 +14,12 @@ body{
 }
 /* .................container here from start...................... */
 
-
 .container{
    background: var(--Violet);
    font-family: 'Poppins', sans-serif;
-   padding: 0 50px;
-  
-
+   padding: 50px 50px 20px 50px;
 }
+
 
 header .logo{
     width: 120px;
@@ -29,13 +27,16 @@ header .logo{
 }
 header .logo img{
     width: 100%;
-    margin-top: 20px;
+   
 }
 /* ......................main..................................... */
 main{
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 40px;
+    height: auto;
+    position: relative;
+    transition: all 0.3s ease-in;
+   
  }
 .content{
     flex: 1;
@@ -49,23 +50,25 @@ main{
 }
 .right{
    
-    padding-left: 50px;
-    padding-top: 0px;
+    margin-left: 50px;
     color: white;
 }
 .right h2{
-    font-size: 35px;
-    width: 80%;
+    font-size: 47px;
     font-weight: 400;
+    
+
+    
 }
 .right p{
-    font-size: 16px;
-    padding-right: 35px;
+    margin-top: -10px;
+    font-size: 19.5px;
     
 }
 .right .btn{
-    padding: 10px 50px;
-    border-radius: 20px;
+   
+    padding: 15px 90px;
+    border-radius: 30px;
     border: 1px solid white;
     color: var(--Violet);
     font-size: 15px;
@@ -111,16 +114,32 @@ footer ul li:hover{
 
 .attribution { font-size: 14px; text-align: center; }
 .attribution a { color: white; }
+
+@media (max-width:375px){
+    .right h2{
+        font-size: 20px;
+        
+    }
+    .right p{
+    font-size: 14px;
+    }
+    .btn{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+           
+    margin-left: 0px;
+    }
+}
 @media (max-width:992px) {
     
     main{
         flex-direction: column;
     }
     .right{
-   
-        padding-left: 0px;
-        padding-top: 0px;
         color: white;
+        position: relative;
     }
     
     footer ul{
@@ -129,20 +148,14 @@ footer ul li:hover{
     .btn{
         margin-bottom: 90px;
     }
+    .container::before{
+        background-size: cover;
+        position: absolute;
+        background: url(/images/bg-mobile.svg);
+        top: 0;
+        left: 0;
+        height: 70vh;
+        width: 100%;
+    }
 
-}
-@media (max-width:572px){
-    .right h2{
-        font-size: 20px;
-        width: 100%;
-        font-weight: 400;
-    }
-    .right p{
-        font-size: 14px;
-        
-        
-    }
-    .btn{
-        width: 100%;
-    }
 }
